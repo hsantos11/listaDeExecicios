@@ -8,15 +8,40 @@ Lógica de programação
  </head>
 <body>
 <h1> 
-lógica de programação(Exercicio 1)
+CÁLCULO DE AREA!!!
 </h1>
+<button  onClick="mostrarArea()">Mostrar área </button>
+</body>
 
 <script>
-    var altura =prompt("ALTURA")
-   // altura=parseFloat(altura)
-    var largura =prompt("LARGURA")
-// largura= parseFloat(largura)
-    alert("a área total é :" + (altura * largura))
+
+ var largura = prompt('DIGITE LARGURA');
+    largura = parseFloat(largura);
+    
+    var altura = prompt('DIGITE ALTURA');
+   altura=parseFloat(altura);
+
+   
+
+    function mostrarArea(l)
+    {alert(l);}
+
+
+  /*  function mostrarAreaAlert(){
+        var area=calcularArea(largura,altura);
+
+    }
+
+  function mostrarAreaOutput){
+        var area=calcularArea(largura,altura);
+        largura= parseFloat(largura);
+        document.querySelector('#output').innerHTML= 'area total é :' + area;
+
+    }
+    function calcularArea(l, a){
+        return l*a;
+    }
+    */
 </script>
-</body>
-</html>
+
+</html> 
