@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title> 
+Lógica de programação
+</title>
+<meta charset="utf-8">
+ </head>
+<body>
+<h1> 
+    ) Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela
+    poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu). 
+  </h1>
+
+<script>
+
+var nascimento = parseInt(prompt("digite o ano de nascimento "));
+var atual = parseInt(prompt("digite o ano atual "));
+var calculo = (atual-nascimento);
+
+if (calculo >= 18)
+{alert("Você já pode votar !")
+}
+else { alert("Você ainda não pode votar !")}
+</script>
+</body>
+</html>
+

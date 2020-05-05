@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title> 
+Lógica de programação
+</title>
+<meta charset="utf-8">
+ </head>
+<body>
+<h1> 
+    Uma revendedora de carros usados paga a seus funcionários vendedores 
+    um salário fixo por mês, mais uma comissão também fixa para cada carro
+     vendido e mais 5% do valor das vendas por ele efetuadas.
+      Escrever um algoritmo que leia o (número de carros por ele vendidos,)
+       o (valor total de suas vendas,) o (salário fixo) e
+        o (valor que ele recebe por carro vendido). Calcule e escreva o 
+        (salário final) do vendedor. 
+</h1>
+
+<script>
+var salarioFixo= prompt("valor do salário fixo ");
+
+var  carrosVendidos= prompt("numero de carros vendidos");
+
+//estipulei um valor padrão de carro (R$30.000)
+var totalDeVendas=(carrosVendidos*30000);
+
+totalDeVendas+parseFloat(totalDeVendas);
+
+//estipulei um valor padrão de comissão (3%)
+var comissao=  (salarioFixo*3/100);
+comissao=parseFloat(comissao);
+
+var salarioFinal=   (totalDeVendas*5/100) + salarioFixo + comissao
+{alert("o salário final é :" + salarioFinal)
+;}
+
+</script>
+</body>
+</html>
