@@ -13,15 +13,17 @@ Lógica de programação
 
 <script>
 var numero = prompt('DIGITE UM NUMERO');
-numero = parseFloat(numero);
+numero = parseInt(numero);
 
-var indice= 1;
+var antecessor= ( numero-1);
+antecessor = parseInt(numero);
 
-while( indice <= 10){
-    document.write(numero + 'x' + indice + '=' + (numero * indice) + '<br>');
-    indice= indice +1;
-}
-document.write('');
+function ante(antecessor){alert(antecessor)}
+
+
+
+
+
 </script>
 </body>
 </html>

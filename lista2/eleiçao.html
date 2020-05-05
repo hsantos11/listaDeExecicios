@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title> 
+Lógica de programação
+</title>
+<meta charset="utf-8">
+ </head>
+<body>
+<h1> 
+ELEIÇÃO
+</h1>
+
+<script>
+var eleitores= prompt("digite o numero total de eleitores do municipio");
+
+var votosEmBranco= prompt("Quantidade de votos em branco: ");
+
+var votosNulos= prompt("Quantidade de votos nulos: ");
+
+var porcBranco= (votosEmBranco*100/eleitores);
+
+var porcNulos= (votosNulos*100/eleitores);
+
+var  porcvalido = (eleitores-(votosEmBranco+votosNulos));
+
+{alert("votos em branco :" +porcBranco+ "%" );}; 
+{alert("votos nulos:" + porcNulos+ "%" );}
+{alert("votos validos:" + porcvalido*100/eleitores+ "%" );}
+
+
+
+</script>
+</body>
+</html>

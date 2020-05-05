@@ -12,14 +12,12 @@ Lógica de preogramação
 </h1>
 
 <script>
-var numero =prompt("IGITE UM NUMERO");
-munero=parseFloat(numero);
+var fabrica= prompt("digite o numero total de eleitores do municipio");
 
-var indice= 1;
-while( indice<=1000){
-    document.write(numero + 'x' + indice + '=' + (numero *indice) + '<br>');
-}
-document.write('saiu do loop');
+var porcDistribuidor= (fabrica * 0.28 )+ fabrica;
+var imposto= (fabrica * 0.45 );
+var consumidor= imposto + porcDistribuidor
+{alert("o valor final do carro é :" + consumidor)}
 </script>
 </body>
 </html>
