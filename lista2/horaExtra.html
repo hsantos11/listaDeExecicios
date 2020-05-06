@@ -14,31 +14,25 @@ Lógica de programação
     o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
     (considere que o mês possua 4 semanas exatas)
 <script>
+
 var horasTrabalhadas=parseInt(prompt("digite a quantidade de horas trabalhadas"));
+var valorHora= 12.5;
+
 var salario=valorHora*horasTrabalhadas;
 
-var valorHora= 25;
+var horaextra= (50/100)
 
-var mesHora = 160;
-
-var horaextra= (25*50/100)
-
-
-//var calculo= ((horasTrabalhadas*valorHora)+horaextra)
-
-if (horasTrabalhadas < 160)
+if (horasTrabalhadas <= 160)
 {var a= (horasTrabalhadas*valorHora)
-{alert("seu salario é : " + a)}
-
+alert("seu salario é : " + a)
 }
+
 else{
-   if ( mesHora>160){
-var b= ( ((horasTrabalhadas-160) *horaextra) + salario);}
-    
-{alert("seu salario ficou  :" + b );}
-   }
- 
-</script>
+  var b=((((horasTrabalhadas-160) *valorHora)*horaextra) + salario);
+alert("seu salario agora é:  " + b );
+} 
+   
+ </script>
 </body>
 </html>
 
