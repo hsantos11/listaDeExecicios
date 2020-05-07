@@ -13,7 +13,8 @@ As propriedades e tipos de valores para cada propriedade desse objeto devem ser:
 - `andando` - Boolean - recebe "falso" por padrão
 - `caminhouQuantosMetros` - Number - recebe "zero" por padrão
 */
-var pessoa=  {nome : "herberth", sobrenome: "santos",sexo: "masculino", idade: 37, altura:1.83, peso: 83, andando: false, caminhouQuantosMetros: 0;}
+var pessoa=  {nome : "herberth", sobrenome: "santos",sexo: "masculino",
+ idade: 37, altura:1.83, peso: 83, andando: false, caminhouQuantosMetros: 0;}
 
 
 /*
@@ -153,5 +154,9 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-pessoa.apresentacao= function(){ var sexo ="o"; var idadeAnos= "anos" ; if(pessoa.sexo === feminino ){sexo = "a";} if (pessoa.idade === 1 ) {idadeAnos= "ano"} return "Olá, eu sou " + pessoa.nome   + pessoa.sobrenome+ ", tenho " + pessoa.idade + idadeAnos + pessoa.altura ", meu peso é "  + pessoa.peso + " e, só hoje, eu já caminhei  " + pessoa.caminhouQuantosMetros + "  metros!" ;};
+pessoa.apresentacao= function(){ return "Olá, eu sou " + pessoa.nome +"   "+
+ pessoa.sobrenome+ ", tenho " + pessoa.idade +"anos "+ pessoa.altura +"  de altura,
+   meu peso é "  + pessoa.peso + " e, só hoje, eu já caminhei  " 
+  + pessoa.caminhouQuantosMetros + "  metros!" ;};
 // Agora, apresente-se ;)
+'Olá, eu sou herberthsantos, tenho 41,1.83 meu peso é 83 e, só hoje, eu já caminhei  NaN  metros!'
